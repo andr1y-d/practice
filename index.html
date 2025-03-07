@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Title</title>
+  </head>
+  <body class="font-jost">
+    <!--Main page-->
+    <section class="w-full h-screen bg-black relative rounded-b-[72px] overflow-hidden">
+      <!--Navigation & Background-->
+      <img src="images/mainBackground.png" alt="backgroundImage" class="w-full h-screen absolute  bg-cover opacity-[1] rounded-b-[72px]">
+      <nav class="relative text-white py-[20px]">
+        <ul class="m-0 p-0 flex justify-center items-center gap-12">
+          <li class="inline-block"><button class="px-8 py-2 bg-white text-black rounded-3xl cursor-pointer">Home</button></li>
+          <li class="inline-block"><a href="#">About us</a></li>
+          <li class="inline-block"><a href="#">Services</a></li>
+          <li class="inline-block"><a href="#">Portfolio</a></li>
+          <li class="inline-block"><a href="#">Blog</a></li>
+          <li class="inline-block"><a href="#">Pages</a></li>
+          <li class="inline-block"><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+      <!--Main content page 1-->
+      <div class="flex flex-wrap relative h-[68%]">
+        <div class="flex flex-wrap items-end  w-[41%] h-[100%] ml-auto text-white">
+          <div class="flex flex-wrap gap-3">
+            <p class="text-5xl font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
+          </div>
+          <button class="w-[232px] h-[54px] text-black bg-white px-8 py-2 rounded-3xl">Register</button>
+        </div>
+        <div class="flex flex-wrap justify-between items-end w-[41%] h-[100%] mr-auto text-white">
+          <img src="images/mainPhoto.png" class="absolute" alt="mainPhoto">
+          <div class="flex flex-nowrap justify-end items-center gap-4 z-[2]">
+            <img src="images/avatar.png" class="w-1/3 ml-auto max-w-[100%] w-[30%] h-[40%]" alt="avatars">
+            <p class="w-1/3 w-[45%] h-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Second page-->
+    <section class="h-screen w-[83%] m-auto flex flex-wrap content-center gap-7">
+      <p class="text-[40px] font-bold">Кому буде корисний курс</p>
+      <div class="flex justify-center gap-4 items-center text-white flex-wrap relative h-[68%] rounded-[40px] overflow-hidden">
+        <img src="images/mainPhotoPage2.png" alt="mainBackground2" class="w-full h-screen absolute  bg-cover opacity-[1] rounded-b-[72px] z-[-1]">
+        <div class="flex items-stretch flex-wrap  w-[43%] h-[77%] bg-[#1A1A1A] py-8 px-5 rounded-[25px] border border-white">
+          <div class="self-start text-[40px] font-bold leading-[1.2]">
+            <p>Trusted By Worldwide</p>
+            <p>Clients Since 1</p>
+          </div>
+          <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
+        </div>
+        <div class="w-[47%] flex flex-wrap gap-4">
+          <div class="flex items-stretch flex-wrap  w-[48%] h-[44%] py-8 px-5 rounded-[25px] border border-white">
+            <p class="text-[28px] font-bold">First On Field</p>
+            <p class="text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste</p>
+          </div>
+          <div class="flex items-stretch flex-wrap  w-[48%] h-[44%] py-8 px-5 rounded-[25px] border border-white">
+            <p class="text-[28px] font-bold">Worldwide</p>
+            <p class="text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste</p>
+          </div>
+          <div class="flex items-stretch flex-wrap  w-[48%] h-[44%] py-8 px-5 rounded-[25px] border border-white">
+            <p class="text-[28px] font-bold">Easy to reach</p>
+            <p class="text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste</p>
+          </div>
+          <div class="flex items-stretch flex-wrap  w-[48%] h-[44%] py-8 px-5 rounded-[25px] border border-white">
+            <p class="text-[28px] font-bold">24/7 Support</p>
+            <p class="text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Third page-->
+    <section class="h-screen w-full m-auto flex flex-wrap content-center gap-7">
+      <div class="w-[83%] m-auto flex flex-wrap content-center gap-7">
+        <p class="text-[40px] font-bold">Спікери курсу</p>
+        <div id="animation-carousel" class="relative w-full" data-carousel="static">
+          <!-- Carousel wrapper -->
+          <div id="speakers_carousel" class="relative h-[100%] overflow-hidden rounded-[40px]">
+              <!-- Item 1 -->
+              <div class=" duration-200 ease-linear" data-carousel-item>
+                  <div class="flex justify-between bg-[#E2E6EE] p-[50px]">
+                    <img src="images/speaker-1.png" class="w-[33%]" alt="speaker-1">
+                    <div class="flex flex-wrap content-start w-[63%] justify-center">
+                      <div class="flex flex-wrap content-center bg-white w-[100%] h-[48%] px-[29px] mb-[55px] border-[1.5px] border-black rounded-2xl shadow-lg border-b-6 border-r-6 border-l-6">
+                        <span class="text-[28px] font-extrabold">Web Development</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+                      </div>
+                      <!--Choosing direction-->
+                      <div class="flex flex-wrap justify-center content-start w-[100%] h-[20%] gap-3 mb-[8%]">
+                        <span class="bg-black text-white rounded-[28px] text-lg font-medium px-4 py-1.5">Web Development</span>
+                        <span class="border rounded-[28px] text-lg font-medium px-4 py-1.5">Digital Marketing</span>
+                        <span class="border rounded-[28px] text-lg font-medium px-4 py-1.5">SaaS Products</span>
+                        <span class="border rounded-[28px] text-lg font-medium px-4 py-1.5">Apps Development</span>
+                        <span class="border rounded-[28px] text-lg font-medium px-4 py-1.5">SEO Services</span>
+                        <span class="border rounded-[28px] text-lg font-medium px-4 py-1.5">Data Analysis</span>
+                      </div>
+                      <!-- Slider controls -->
+                      <div class="flex flex-wrap content-end">
+                        <button type="button" class="flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                          <span class="inline-flex items-center justify-center w-10 h-10">
+                              <img src="images/arrowToLeft.png" alt="arrowToLeft">
+                              <span class="sr-only">Previous</span>
+                          </span>
+                        </button>
+                        <span class="content-center">1 / 3</span>
+                        <button type="button" class="flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                          <span class="inline-flex items-center justify-center w-10 h-10">
+                              <img src="images/arrowToRight.png" alt="arrowToRight">
+                              <span class="sr-only">Next</span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-200 ease-linear" data-carousel-item>
+                  <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+                  <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fourth page-->
+    <section class="h-screen w-[83%] m-auto flex flex-wrap content-center gap-7">
+      <p class="text-[40px] font-bold">Як проходить навчання</p>
+      <div class="flex justify-evenly gap-4 items-center text-white flex-wrap relative h-[68%] w-[100%] rounded-[40px] overflow-hidden">
+        <img src="images/mainPhotoPage2.png" alt="mainBackground2" class="w-full h-screen absolute  bg-cover opacity-[1] rounded-b-[72px] z-[-1]">
+        <div class="flex flex-wrap items-center gap-5 w-[43%] h-[80%] bg-[#1A1A1A] py-8 px-5 rounded-[25px] border border-white">
+          <video class="w-full h-[80%] border rounded-2xl" controls>
+            <source src="/docs/videos/flowbite.mp4" type="video/mp4">
+          </video>
+          <span class="flex flex-wrap bg-white text-black items-center justify-center rounded-[25px] w-full h-[15%]">
+            <img src="images/playCircle.png" class="w-[5%] h-5" alt="playCircle">
+            <p class="text-xl font-medium px-[9px]">Watch video</p>
+          </span>
+        </div>
+        <!--Second part off 4th page-->
+        <div class="flex flex-wrap bg-white text-black w-[43%] h-[80%] py-8 px-5 rounded-[25px] border border-white">
+          <p class="text-[32px] font-extrabold">Get to know the platform</p>
+          <p class="text-[16px]">Lorem ipsum dolor sit amet consectetur. Felis amet consectetur sollicitudin at aliquam tincidunt laoreet auctor elit. Lectus ipsum sapien id turpis elit cras ac. Velit risus nisl ut dictum venenatis mauris faucibus. Aliquam vehicula gravida fermentum in sodales fringilla mi at. Turpis volutpat parturient elit blandit proin magna pretium vestibulum elit. A massa adipiscing pellentesque tempor ac vel.</p>
+          <!-- Slider controls -->
+          <div class="flex flex-wrap content-end">
+            <button type="button" class="flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+              <span class="inline-flex items-center justify-center w-10 h-10">
+                  <img src="images/arrowToLeft.png" alt="arrowToLeft">
+                  <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <span class="content-center">1 / 4</span>
+            <button type="button" class="flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+              <span class="inline-flex items-center justify-center w-10 h-10">
+                  <img src="images/arrowToRight.png" alt="arrowToRight">
+                  <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

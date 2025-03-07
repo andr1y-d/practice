@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>IT School</title>
+  </head>
+  <body class="font-['Jost']">
+    <!--Main page-->
+    <section class="w-full h-screen bg-black relative rounded-b-[72px] overflow-hidden">
+      <!--Navigation & Background-->
+      <img src="images/mainBackground.png" alt="backgroundImage" class="w-full h-screen absolute  bg-cover opacity-[1] rounded-b-[72px]">
+      <nav class="relative w-full z-20 top-0 start-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center md:justify-center justify-end mx-auto p-4">
+          <div class="flex">
+              <button data-collapse-toggle="navbar-sticky" type="button" class=" items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+          </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col gap-5 items-center p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+              <li class="bg-white px-6 py-1.5 rounded-3xl hover:bg-[#B4b4b4] duration-100 active:bg-white">
+                <a href="#" class="block py-2 px-5 text-black rounded-sm md:p-0" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="#" class="block text-white hover:border-b-[0.5px]">About us</a>
+              </li>
+              <li>
+                <a href="#" class="block text-white hover:border-b-[0.5px]">Services</a>
+              </li>
+              <li>
+                <a href="#" class="block text-white hover:border-b-[0.5px]">Portfolio</a>
+              </li>
+              <li>
+                <a href="#" class="block text-white hover:border-b-[0.5px]">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="block text-white hover:border-b-[0.5px]">Pages</a>
+              </li>
+              <li>
+                <a href="#" class="block text-white hover:border-b-[0.5px]">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Main content page 1-->
+      <div class="flex flex-wrap relative md:h-[68%] h-[80%]">
+        <div class="absolute md:pl-[43%] md:pt-0 pt-[30%] z-[0]">
+          <img src="images/mainGradient.png" class="" alt="mainGradient">
+        </div>
+        <div class="flex flex-wrap justify-center md:justify-start content-between md:content-end md:gap-20 md:items-end md:w-[41%] h-full ml-auto text-white z-10">
+          <div class="flex flex-wrap  gap-4">
+            <p class="md:text-5xl md:leading-14 text-center md:text-start text-[24px] font-semibold md:px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="md:text-lg text-center md:text-start text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
+          </div>
+          <button class="w-[210px] h-[45px] text-black bg-white px-8 py-1 cursor-pointer rounded-3xl hover:bg-[#B4b4b4] duration-100 active:bg-white">Register</button>
+        </div>
+        <div class="flex flex-wrap content-end absolute md:relative md:justify-evenly justify-center md:items-end items-center md:w-[41%] h-[88%] md:h-[100%] mr-auto text-white">
+          <img src="images/mainPhoto.png" class="md:absolute w-[70%] md:w-full" alt="mainPhoto">
+          <div class="flex flex-wrap md:justify-end gap-4 md:z-[2]">
+            <img src="images/avatar.png" class="md:w-1/3 w-[35%] md:ml-auto m-auto max-w-[100%] w-[30%] h-[40%]" alt="avatars">
+            <p class="w-full md:w-[45%] h-auto text-center md:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Second page-->
+    <section class="h-screen w-[90%] md:w-[83%] m-auto flex flex-wrap content-center gap-3 md:gap-7">
+      <p class="text-[20px] md:text-[40px] font-bold">Кому буде корисний курс</p>
+      <div class="flex justify-center gap-2 py-5.5 md:py-0 items-center text-white flex-wrap relative h-[80%] md:h-[68%] rounded-[35px] md:rounded-[40px] overflow-hidden">
+        <img src="images/mainPhotoPage2.png" alt="mainBackground2" class="w-full h-screen absolute  bg-cover opacity-[1] rounded-b-[72px] z-[-1]">
+        <div class="flex items-stretch flex-wrap w-[85%] h-auto md:w-[43%] md:h-[69%] bg-[#1A1A1A] py-4 px-5 md:py-8 md:px-5 rounded-[25px] border border-white gap-3">
+          <div class="self-start text-[20px] md:text-[40px] font-bold leading-[1.2]">
+            <p>Trusted By Worldwide</p>
+            <p>Clients Since 1</p>
+          </div>
+          <p class="text-[11px] md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
+        </div>
+        <div class="w-full px-5 md:p-0 md:w-[45%] flex flex-wrap gap-2">
+          <div class="flex items-stretch flex-wrap w-[48%] h-[40%] px-4 py-4 md:w-[48%] md:h-[44%] md:py-6 md:px-5 rounded-[25px] border border-white">
+            <p class="text-[16px] font-extrabold md:text-[28px] md:font-bold">First On Field</p>
+            <p class="text-[10px] md:text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste</p>
+          </div>
+          <div class="flex items-stretch flex-wrap w-[48%] h-[40%] px-4 py-7 md:w-[48%] md:h-[44%] md:py-6 md:px-5 rounded-[25px] border border-white">
+            <p class="text-[16px] font-extrabold md:text-[28px] md:font-bold">Worldwide</p>
+            <p class="text-[10px] md:text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste</p>
+          </div>
+          <div class="flex items-stretch flex-wrap w-[48%] h-[40%] px-4 py-4 md:w-[48%] md:h-[44%] md:py-6 md:px-5 rounded-[25px] border border-white">
+            <p class="ttext-[16px] font-extrabold md:text-[28px] md:font-bold">Easy to reach</p>
+            <p class="text-[10px] md:text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste</p>
+          </div>
+          <div class="flex items-stretch flex-wrap w-[48%] h-[40%] px-4 py-4 md:w-[48%] md:h-[44%] md:py-6 md:px-5 rounded-[25px] border border-white">
+            <p class="text-[16px] font-extrabold md:text-[28px] md:font-bold">24/7 Support</p>
+            <p class="text-[10px] md:text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Third page-->
+    <section class="h-screen w-full m-auto flex flex-wrap content-center">
+      <div class="w-[90%] md:w-[83%] m-auto flex flex-wrap content-center gap-3 md:gap-7">
+        <p class="text-[20px] md:text-[40px] font-bold">Спікери курсу</p>
+        <div id="animation-carousel" class="relative w-full" data-carousel="static">
+          <!-- Carousel wrapper -->
+          <div id="speakers_carousel" class="relative h-[100%] overflow-hidden rounded-[35px] md:rounded-[40px] opacity-100 transition-opacity duration-200">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fourth page-->
+    <section class="h-screen w-[90%] md:w-[83%] m-auto flex flex-wrap content-center gap-3 md:gap-7">
+      <p class="text-[20px] md:text-[40px] font-bold">Як проходить навчання</p>
+      <div id="steps_carousel" class="duration-200 flex flex-wrap content-center md:content-evenly justify-evenly px-2 py-8 md:p-0 md:gap-1 items-center text-white relative h-[85%] md:h-[68%] w-[100%] rounded-[35px] md:rounded-[40px] overflow-hidden">
+        
+      </div>
+    </section>
+    <!--Fifth page-->
+    <section class="h-screen w-full m-auto flex flex-wrap content-center">
+      <div class="w-[90%] md:w-[83%] m-auto flex flex-wrap content-center gap-3 md:gap-7">
+        <p class="text-[20px] md:text-[40px] font-bold">Кейси учнів</p>
+        <div id="animation-carousel" class="relative w-full" data-carousel="static">
+          <!-- Carousel wrapper -->
+          <div id="our_cases_carousel" class="relative h-[100%] overflow-hidden rounded-[35px] md:rounded-[40px] opacity-100 transition-opacity duration-200">
+              <!-- Item 1 -->
+               <div class=" duration-200 ease-linear" data-carousel-item>
+                  <div class="flex flex-wrap justify-between bg-[#E2E6EE] p-5 md:p-[50px] gap-4 md:gap-0">
+                    <img src="images/ourCases-1.png" class="h-[25%] w-full md:w-[33%] md:h-full" alt="speaker-1">
+                    <div class="flex flex-wrap content-start md:w-[63%] justify-center gap-3 md:gap-0">
+                      <!--Main information-->
+                      <div class="flex flex-wrap content-center bg-white py-3 px-3 md:w-[100%] md:h-[48%] md:px-[29px] md:mb-[55px] border-[1.5px] border-black rounded-2xl shadow-lg border-b-6 border-r-6 border-l-6">
+                        <span class="text-[14px] md:text-[28px] font-extrabold">Web Development</span>
+                        <p class="text-[10px] md:text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+                      </div> 
+                      <!--Choosing direction-->
+                       <div class="flex flex-wrap justify-center md:w-[100%] md:h-[20%] gap-1 md:gap-3 md:mb-[8%]">
+                        <button class=" border bg-black text-white rounded-[28px] text-[10px] md:text-lg font-medium px-1.5 py-1 md:px-4 md:py-1.5 cursor-pointer">Web Development</button>
+                        <button class=" border rounded-[28px] text-[10px] md:text-lg font-medium px-1.5 py-1 md:px-4 md:py-1.5 cursor-pointer">Digital Marketing</button>
+                        <button class=" border rounded-[28px] text-[10px] md:text-lg font-medium px-1.5 py-1 md:px-4 md:py-1.5 cursor-pointer">SaaS Products</button>
+                        <button class=" border rounded-[28px] text-[10px] md:text-lg font-medium px-1.5 py-1 md:px-4 md:py-1.5 cursor-pointer">Apps Development</button>
+                        <button class=" border rounded-[28px] text-[10px] md:text-lg font-medium px-1.5 py-1 md:px-4 md:py-1.5 cursor-pointer">SEO Services</button>
+                        <button class=" border rounded-[28px] text-[10px] md:text-lg font-medium px-1.5 py-1 md:px-4 md:py-1.5 cursor-pointer">Data Analysis</button>
+                      </div> 
+                      <!-- Slider controls -->
+                       <div class="flex flex-wrap justify-center  md:w-[100%] md:h-[20%] gap-1 md:gap-3 md:mb-[8%]">
+                        <button type="button" class="flex items-center justify-center cursor-pointer group focus:outline-none our-case-carousel-previous" data-carousel-prev>
+                          <span class="inline-flex items-center justify-center w-10">
+                              <img src="images/arrowToLeft.png" alt="arrowToLeft">
+                              <span class="sr-only">Previous</span>
+                          </span>
+                        </button>
+                        <span class="content-center cursor-default text-sm md:font-normal">1 / 12</span>
+                        <button type="button" class="flex items-center justify-center cursor-pointer group focus:outline-none our-case-carousel-next" data-carousel-next>
+                          <span class="inline-flex items-center justify-center w-10">
+                              <img src="images/arrowToRight.png" alt="arrowToRight">
+                              <span class="sr-only">Next</span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+              </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Sixth page-->
+    <section class="h-screen w-[90%] md:w-[83%] m-auto flex flex-wrap content-center gap-7">
+      <p class=" text-[20px] md:text-[40px] font-bold">Центр кар'єри</p>
+      <div class="flex justify-center md:justify-end gap-4 items-center bg-black text-white flex-wrap relative h-[50%] md:h-[55%] md:w-[100%] rounded-[35px] md:rounded-[40px] overflow-hidden">
+        <div class="flex flex-wrap content-between md:content-center gap-6 w-[85%] h-[85%] md:w-[43%] md:h-[80%] rounded-[25px]">
+          <div class="flex flex-wrap flex-col-reverse md:flex-col">
+            <p class="invisible md:visible text-[28px] font-extrabold">For adults</p>
+            <p class="text-center md:text-start text-[10px] md:text-[16px]">ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
+          </div>
+          <span class="flex flex-wrap w-full justify-center md:justify-start gap-1">
+            <button class="text-[10px] md:text-[14px] font-medium border border-white px-2 py-1.5 rounded-[20px] cursor-pointer active:bg-white active:text-black active:duration-100">In-demand professions</button>
+            <button class="text-[10px] md:text-[14px] font-medium border border-white px-2 py-1.5 rounded-[20px] cursor-pointer active:bg-white active:text-black active:duration-100">Practice on tasks</button>
+          </span>
+        </div>
+        <!--Second part off 4th page-->
+        <div class="flex flex-wrap absolute md:relative content-center md:content-end justify-center md:justify-end text-black w-[75%] md:w-[50%] md:h-[100%] rounded-[25px]">
+          <img src="images/mainPhotoPage6.png" class="mt-auto w-auto" alt="mainPhotoPage6">
+        </div>
+      </div>
+    </section>
+    <!--Seventh page-->
+    <section class="h-screen w-full m-auto flex flex-wrap content-center">
+      <div class="w-[90%] md:w-[83%] m-auto flex flex-wrap content-center gap-3 md:gap-7">
+        <p class="text-[20px] md:text-[40px] font-bold">Програма курсу</p>
+        <div id="animation-carousel" class="relative w-full" data-carousel="static">
+          <!-- Carousel wrapper -->
+          <div id="our_cases_carousel" class="relative h-[100%] overflow-hidden rounded-[35px] md:rounded-[40px] opacity-100 transition-opacity duration-200">
+              <!-- Item 1 -->
+               <div class=" duration-200 ease-linear" data-carousel-item>
+                  <div class="flex flex-wrap justify-between bg-[#E2E6EE] p-5 md:p-[50px] gap-4 md:gap-0">
+                    <img src="images/courseProgram1.png" class="h-[25%] w-full md:w-[33%] md:h-full" alt="speaker-1">
+                    <div class="flex flex-wrap content-start md:w-[63%] justify-center gap-3 md:gap-0">
+                      <!--Main information-->
+                      <div class="flex flex-wrap content-center bg-white py-3 px-3 md:w-[100%] md:h-[48%] md:px-[29px] md:mb-[30px] border-[1.5px] border-black rounded-2xl shadow-lg border-b-6 border-r-6 border-l-6">
+                        <span class="text-[14px] md:text-[28px] font-extrabold">Web Development</span>
+                        <p class="text-[10px] md:text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+                      </div> 
+                      <!--List section-->
+                      <div class="flex flex-wrap justify-between items-center flex-col">
+                        <span class="bg-white text-black py-1.5 px-4 rounded-[28px] border border-black text-[12px] font-medium mg:text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+                        <div class="flex flex-wrap justify-between bg-black text-white md:mb-[40px] w-[75%] h-auto px-6 py-1 rounded-b-[20px]">
+                          <div class="flex w-1/4 justify-start content-center text-xs">1</div>
+                          <div class="flex flex-wrap justify-between content-center w-1/2">
+                            <img src="images/arrowLeft.png" class="md:w-[10%] md:h-[40%]" alt="arrowLeft">
+                            <img src="images/plusSighn.png" class="md:w-[10%] md:h-[50%]" alt="plusSighn">
+                            <img src="images/arrowRight.png" class="md:w-[10%] md:h-[40%]" alt="arrowRight">
+                          </div>
+                          <div class="flex w-1/4 justify-end content-center text-xs">8</div>
+                        </div>
+                      </div>
+                      <!--Choosing direction-->
+                       <div class="flex flex-wrap justify-center md:w-[100%] md:h-[20%] gap-1 md:gap-3">
+                        <button class="bg-black text-white rounded-[28px] text-[10px] md:text-lg font-medium px-1.5 py-1 md:px-4 md:py-1.5 cursor-pointer">Web Development</button>
+                        <button class="border rounded-[28px] text-[10px] md:text-lg font-medium px-1.5 py-1 md:px-4 md:py-1.5 cursor-pointer">Digital Marketing</button>
+                        <button class="border rounded-[28px] text-[10px] md:text-lg font-medium px-1.5 py-1 md:px-4 md:py-1.5 cursor-pointer">SaaS Products</button>
+                        <button class="border rounded-[28px] text-[10px] md:text-lg font-medium px-1.5 py-1 md:px-4 md:py-1.5 cursor-pointer">Apps Development</button>
+                        <button class="border rounded-[28px] text-[10px] md:text-lg font-medium px-1.5 py-1 md:px-4 md:py-1.5 cursor-pointer">SEO Services</button>
+                        <button class="border rounded-[28px] text-[10px] md:text-lg font-medium px-1.5 py-1 md:px-4 md:py-1.5 cursor-pointer">Data Analysis</button>
+                      </div> 
+                      <!-- Slider controls -->
+                    </div>
+                  </div>
+              </div> 
+              <!-- Item 2 -->
+               <div class="hidden duration-200 ease-linear" data-carousel-item>
+                  <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div> 
+              <!-- Item 3 -->
+              <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+                  <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Eight page-->
+    <section class="h-screen w-[90%] md:w-[83%] m-auto flex flex-wrap content-center gap-7">
+      <p class=" text-[20px] md:text-[40px] font-bold">Експертна спільнота</p>
+      <div class="flex justify-center md:justify-end gap-4 items-center bg-black text-white flex-wrap relative h-[50%] md:h-[55%] md:w-[100%] rounded-[35px] md:rounded-[40px] overflow-hidden">
+        <div class="flex flex-wrap content-between md:content-center gap-6 w-[85%] h-[85%] md:w-[43%] md:h-[80%] rounded-[25px]">
+          <div class="flex flex-wrap">
+            <p class="text-[16px] md:text-[28px] font-extrabold">Career center</p>
+            <p class="text-[10px] md:text-[16px]">ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
+          </div>
+          <div class="flex flex-wrap w-full justify-center md:justify-start gap-1">
+            <button class="text-[10px] md:text-[14px] font-medium border border-white px-2 py-1.5 rounded-[20px] cursor-pointer active:bg-white active:text-black active:duration-100">In-demand professions</button>
+            <button class="text-[10px] md:text-[14px] font-medium border border-white px-2 py-1.5 rounded-[20px] cursor-pointer active:bg-white active:text-black active:duration-100">Practice on tasks</button>
+          </div>
+        </div>
+        <!--Second part off 4th page-->
+        <div class="flex flex-wrap absolute md:relative content-center md:content-end justify-center md:justify-end text-black w-[75%] md:w-[50%] md:h-[100%] rounded-[25px]">
+          <img src="images/mainPhotoPage8.png" class="mt-auto w-auto" alt="mainPhotoPage6">
+        </div>
+      </div>
+    </section>    
+    <!--Nineth page-->
+    <section class="h-screen w-full md:w-[85%] md:m-auto flex flex-wrap content-center justify-center gap-3 md:gap-7 overflow-hidden">
+      <div class="flex flex-wrap w-[90%] h-full absolute z-1 visible md:invisible justify-between items-center">
+        <img src="images/bigArrowLeft.png" alt="bigArrowLeft">
+        <img src="images/bigArroRight.png" alt="bigArrowLeft">
+      </div>
+      <div class="flex flex-wrap w-full px-2 content-start">
+        <p class="text-[20px] md:text-[40px] font-bold">Тарифи навчання</p>
+      </div>
+        <div class="flex flex-nowrap md:gap-5 justify-center">
+          <!-- Light Card 1 -->
+          <div class="w-full min-w-[290px] max-w-[290px] md:max-w-[345px] bg-[#E2E6EE] rounded-[24px] sm:rounded-[32px] p-4 sm:p-8 flex flex-col">
+              <h2 class="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">Колеги</h2>
+              <p class="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6">Діє при оплаті навчання групи з трьох осіб</p>
+              
+              <div class="flex flex-col sm:flex-row sm:justify-between items-start gap-2 sm:gap-0 mb-6 sm:mb-8">
+                  <div class="w-full sm:w-auto">
+                      <div class="flex items-baseline gap-1 sm:gap-2">
+                          <span class="text-[#5245DD] text-2xl sm:text-3xl font-bold">3 329</span>
+                          <span class="text-[#5245DD] text-sm">/місяць</span>
+                      </div>
+                      <div class="flex items-center gap-1 sm:gap-2">
+                          <span class="text-gray-400 line-through text-sm">3 329</span>
+                          <span class="text-gray-500 text-xs sm:text-sm">на 24 місяць</span>
+                      </div>
+                  </div>
+                  <div class="w-full sm:w-auto flex justify-between sm:block">
+                      <div class="text-[16px] md:text-[16px] font-jost text-[#5245DD]">75 900</div>
+                      <div class="flex items-center gap-1 sm:gap-2">
+                          <span class="text-gray-400 line-through text-sm">79 900</span>
+                          <span class="bg-[#FFD400] text-[#1b1b1b] text-xs font-medium px-2 py-0.5 rounded">-5%</span>
+                      </div>
+                  </div>
+              </div>
+  
+              <ul class="space-y-1 sm:space-y-2 mb-6 sm:mb-8 flex-grow text-sm sm:text-base">
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>9 модулів за 6 тижнів</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>Вебінари з експертами</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>Практичні завдання</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>Посвідчення про підвищення кваліфікації за підсумками навчання</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>Безстроковий доступ до матеріалів</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>Груповий чат з експертами та координаторами курсу</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>Професійне ком'юніті</span>
+                  </li>
+              </ul>
+  
+              <button class="w-full py-3 sm:py-4 border border-black rounded-full hover:bg-gray-50 transition-colors text-sm sm:text-base">
+                  Вибрати
+              </button>
+          </div>
+  
+          <!-- Dark Card -->
+          <div class="w-full min-w-[290px] max-w-[290px] md:max-w-[345px] bg-black text-white rounded-[24px] sm:rounded-[32px] p-4 sm:p-8 flex flex-col">
+              <h2 class="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">Колеги</h2>
+              <p class="text-gray-400 text-sm sm:text-base mb-4 sm:mb-6">Діє при оплаті навчання групи з трьох осіб</p>
+              
+              <div class="flex flex-col sm:flex-row sm:justify-between items-start gap-2 sm:gap-0 mb-6 sm:mb-8">
+                  <div class="w-full sm:w-auto">
+                      <div class="flex items-baseline gap-1 sm:gap-2">
+                          <span class="text-blue-400 text-2xl sm:text-3xl font-bold">3 329</span>
+                          <span class="text-gray-400 text-sm">/місяць</span>
+                      </div>
+                      <div class="flex items-center gap-1 sm:gap-2">
+                          <span class="text-gray-600 line-through text-sm">3 329</span>
+                          <span class="text-gray-400 text-xs sm:text-sm">на 24 місяць</span>
+                      </div>
+                  </div>
+                  <div class="w-full sm:w-auto flex justify-between sm:block">
+                      <div class="text-[16px] md:text-[16px] font-jost text-blue-400">75 900</div>
+                      <div class="flex items-center gap-1 sm:gap-2">
+                          <span class="text-gray-600 line-through text-sm">79 900</span>
+                          <span class="bg-[#FFD400] text-[#1b1b1b] text-xs font-medium px-2 py-0.5 rounded">-5%</span>
+                      </div>
+                  </div>
+              </div>
+  
+              <ul class="space-y-1 sm:space-y-2 mb-6 sm:mb-8 flex-grow text-sm sm:text-base">
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-500 min-w-[8px]">•</span>
+                      <span>9 модулів за 6 тижнів</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-500 min-w-[8px]">•</span>
+                      <span>Вебінари з експертами</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-500 min-w-[8px]">•</span>
+                      <span>Практичні завдання</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-500 min-w-[8px]">•</span>
+                      <span>Посвідчення про підвищення кваліфікації за підсумками навчання</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-500 min-w-[8px]">•</span>
+                      <span>Безстроковий доступ до матеріалів</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-500 min-w-[8px]">•</span>
+                      <span>Груповий чат з експертами та координаторами курсу</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-500 min-w-[8px]">•</span>
+                      <span>Професійне ком'юніті</span>
+                  </li>
+              </ul>
+  
+              <button class="w-full py-3 sm:py-4 border border-white rounded-full hover:bg-gray-800 transition-colors text-sm sm:text-base">
+                  Вибрати
+              </button>
+          </div>
+  
+          <!-- Light Card 2 (identical to Light Card 1) -->
+          <div class="w-full min-w-[290px] max-w-[290px] md:max-w-[345px] bg-[#E2E6EE] rounded-[24px] sm:rounded-[32px] p-4 sm:p-8 flex flex-col">
+              <h2 class="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">Колеги</h2>
+              <p class="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6">Діє при оплаті навчання групи з трьох осіб</p>
+              
+              <div class="flex flex-col sm:flex-row sm:justify-between items-start gap-2 sm:gap-0 mb-6 sm:mb-8">
+                  <div class="w-full sm:w-auto">
+                      <div class="flex items-baseline gap-1 sm:gap-2">
+                          <span class="text-[#5245DD] text-2xl sm:text-3xl font-bold">3 329</span>
+                          <span class="text-[#5245DD] text-sm">/місяць</span>
+                      </div>
+                      <div class="flex items-center gap-1 sm:gap-2">
+                          <span class="text-gray-400 line-through text-sm">3 329</span>
+                          <span class="text-gray-500 text-xs sm:text-sm">на 24 місяць</span>
+                      </div>
+                  </div>
+                  <div class="w-full sm:w-auto flex justify-between sm:block">
+                      <div class="text-[16px] md:text-[16px] font-jost text-[#5245DD]">75 900</div>
+                      <div class="flex items-center gap-1 sm:gap-2">
+                          <span class="text-gray-400 line-through text-sm">79 900</span>
+                          <span class="bg-[#FFD400] text-[#1b1b1b] text-xs font-medium px-2 py-0.5 rounded">-5%</span>
+                      </div>
+                  </div>
+              </div>
+  
+              <ul class="space-y-1 sm:space-y-2 mb-6 sm:mb-8 flex-grow text-sm sm:text-base">
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>9 модулів за 6 тижнів</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>Вебінари з експертами</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>Практичні завдання</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>Посвідчення про підвищення кваліфікації за підсумками навчання</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>Безстроковий доступ до матеріалів</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>Груповий чат з експертами та координаторами курсу</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                      <span class="text-gray-400 min-w-[8px]">•</span>
+                      <span>Професійне ком'юніті</span>
+                  </li>
+              </ul>
+  
+              <button class="w-full py-3 sm:py-4 border border-black rounded-full hover:bg-gray-50 transition-colors text-sm sm:text-base">
+                  Вибрати
+              </button>
+          </div>
+      </div>
+    </section>
+    <!--Tenth page-->
+    <section class="h-screen w-[90%] md:w-[83%] m-auto flex flex-wrap content-center gap-7">
+      <p class=" text-[20px] md:text-[40px] font-bold">Відгуки</p>
+      <div class="bg-black max-w-full p-5 rounded-[40px]">
+        <div class="flex flex-wrap pl-1 pt-5 justify-center">
+          <!-- Carousel Container -->
+          <div class="relative w-full h-full content-center">
+            <!-- Previous Button -->
+            <button id="prevBtn" aria-label="Previous slide" class="absolute md:ml-5 left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-6 z-10 text-gray-800 p-2 rounded-full shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed">
+                <img src="images/bigArrowLeft.png" alt="bigArrowLeft">
+            </button>
+
+            <!-- Carousel Track -->
+            <div class="overflow-hidden">
+                <div id="track" class="flex gap-4 transition-transform duration-300 ease-out no-scrollbar">
+                </div>
+            </div>
+
+            <!-- Next Button -->
+            <button id="nextBtn" aria-label="Next slide" class="absolute md:mr-5 right-1 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-6 z-10 text-gray-800 p-2 rounded-full shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed">
+                <img src="images/bigArroRight.png" alt="bigArroRight">
+            </button>
+
+            <!-- Dots Navigation -->
+            <div id="dots" class="flex justify-center gap-2 mt-6">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+    <!--Eleventh page-->
+    <section class="h-screen w-[90%] md:w-[83%] m-auto flex flex-wrap content-center gap-7">
+      <p class=" text-[20px] md:text-[40px] font-bold">Зв'язок з нами</p>
+      <div class="flex justify-center md:justify-end md:gap-4 content-center bg-[#E2E6EE] text-black py-5 md:py-10 flex-wrap relative h-[60%] md:h-[55%] md:w-[100%] rounded-[35px] md:rounded-[40px] overflow-hidden z-[-2]">
+        <div class="flex flex-wrap content-between md:content-between p-2 md:p-0 w-[85%] h-[30%] md:w-[40%] md:h-[80%] rounded-[25px]">
+          <div class="flex flex-wrap">
+            <p class="text-[16px] md:text-[32px] font-extrabold">Do you have any questions? Contact us!</p>
+            <p class="text-[10px] md:text-[18px]">Our team is ready to help you with any questions you may have. Just fill out the form below and we will get back to you within 24 hours.</p>
+          </div>
+          <div class="invisible md:visible absolute md:relative flex flex-wrap w-[35%] justify-center md:justify-start gap-1">
+            <img src="images/mainPhoto.png" alt="">
+          </div>
+        </div>
+        <!--Second part off 11th page-->
+        <div class="flex flex-wrap relative content-center justify-center text-black w-[100%] md:w-[50%] md:h-[100%]">
+          <div class="flex flex-nowrap absolute items-center w-full h-[200%] z-[-1]">
+            <img src="images/mainGradient.png" class="w-full h-[50%] rotate-180" alt="secondGradient">
+          </div>
+          <form class="flex flex-wrap w-[80%] md:w-[70%]">
+            <div class="mb-2 md:mb-5 w-full">
+              <input type="text" id="name" class="shadow-xs bg-white text-gray-900 text-sm rounded-[40px] block w-full px-5 py-2.5" placeholder="Ваше ім’я*" required />
+            </div>
+            <div class="mb-2 md:mb-5 w-full">
+              <input type="email" id="email" class="shadow-xs bg-white text-gray-900 text-sm rounded-[40px] block w-full px-5 py-2.5" placeholder="Ваш email*" required />
+            </div>
+            <div class="mb-2 md:mb-5 w-full">
+              <input type="tel" id="phone" class="shadow-xs bg-white text-gray-900 text-sm rounded-[40px] block w-full px-5 py-2.5" placeholder="Ваш номер телефону*" required />
+            </div>
+            <span class="text-[10px] md:text-[14px] md:px-5 pb-3 overflow-visible">Залишаючи свої дані, я погоджуюся на обробку персональних даних відповідно до Політики конфіденційності</span>
+            <button type="submit" class="w-full text-white bg-black font-medium rounded-[40px] text-[16px] md:text-sm px-5 py-2.5 text-center">Send</button>
+          </form>
+        </div>
+      </div>
+    </section> 
+    <!--Footer-->
+    <section class="h-screen w-[100%] flex flex-wrap content-end gap-7">
+      <div class="flex justify-center md:justify-end  items-center bg-black text-white flex-wrap relative h-[50%] md:h-[50%] w-[100%] rounded-t-[35px] md:rounded-t-[40px] overflow-hidden">
+        <div class="flex flex-wrap absolute md:relative content-between md:content-around gap-6 w-[85%] h-[85%] md:w-[43%] md:h-[70%] rounded-[25px]">
+          <div class="flex flex-wrap md:gap-4 gap-2">
+            <span><img src="images/logoIcon.png" alt="logoIcon"></span>
+            <p class="text-[16px] invisible md:visible absolute md:relative">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere modi possimus dignissimos, aliquam nobis eaque? Voluptatem magnam quisquam rem.</p> 
+            <p class="text-[12px] visible md:invisible relative md:absolute">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere </p>
+          </div>
+          <p class="md:text-[16px]">© 2024 Created by: Martin</p>
+        </div>
+        <!--Second part off 4th page-->
+        <div class="flex flex-wrap md:flex-col md:content-evenly justify-around md:justify-around w-[90%] md:w-[50%] md:h-[70%] rounded-[25px]">
+          <div class="flex flex-col md:gap-5 gap-2 w-[55%]">
+            <span class="md:text-[20px] text-[16px] font-semibold">Contact Information</span>
+            <div class="flex flex-wrap gap-2">
+              <span class="md:text-[16px] text-[12px] flex flex-nowrap gap-2"><img src="images/emailIcon.png" alt="emailIcon"><p class="content-center">example@support.com</p></span>
+              <span class="md:text-[16px] text-[12px] flex flex-nowrap gap-2"><img src="images/mapIcon.png" alt="emailIcon"><p class="content-center">5 xyz st., adc, vallhalla</p></span>
+            </div>
+          </div>
+          <div class="flex flex-wrap md:justify-between w-[30%] gap-3 md:gap-0 content-end">
+            <a href="" class="md:text-[16px] text-[14px]">Terms of Use</a>
+            <a href="" class="md:text-[16px] text-[14px]">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <script src="main.js"></script>
+  </body>
+</html>
